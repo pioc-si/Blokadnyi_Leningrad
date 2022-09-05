@@ -10,18 +10,17 @@
 <link href="https://fonts.googleapis.com/css?family=Lora&amp;subset=cyrillic" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <style>
-               
+
 		body {
-		font-family: 'Yeseva One', cursive;
+		
 		margin: 0px;
 		padding: 0px;
+		position: relative;
+		min-height: 100%;
 		background: url(https://media.githubusercontent.com/media/pioc-si/Blokadnyi_Leningrad/main/images/back.jpg);
 		} 
 		
-	    *{
-			margin: 0px;
-			padding: 0px;
-		}
+
 		header h1 {
 		    font: 4em sans-serif;
 			font-family: "Yeseva One", PT Sans;
@@ -31,17 +30,22 @@
 		}
 		
 		footer {
+			position: fixed;
+ 			 bottom: 0px;
+ 			 width: 100%;
+ 			 /* Высота footer */
+		  height: 30px;
 		background-color: #0075eb;
 		background: radial-gradient(circle,#24a4ff,#0075eb);
 		}
 		
-		menu, menu ul, footer ul {
+		menu, menu ul {
 		    margin: 10px 0px;
 			padding: 0px;
 			text-align: center;
 		}
 		
-		menu ul li, footer ul li {
+		menu ul li {
 		    font: 1.7em sans-serif;
 			font-family: 'Lora', PT Sans;
 			display: inline-block;
@@ -64,208 +68,49 @@
 			font-size: larger;
 			line-height: 18pt;
 		}
-		
-		.main-text { 
-			width:800px; 
-			margin:auto auto; 
-			background-color:#FFFFFF; 
-			 
-			 box-shadow: 0 0 4px #000; 
-			 -webkit-box-shadow: 0 0 14px #000; 
-			 -moz-box-shadow: 0 0 4px #000; 
-		}
-		#page-border {
-			width:1033px; 
-			height: 720px;
-			margin:auto auto; 
-			padding: 15px 16px;
-			padding-top: 15px;
-			padding-right: 16px;
-			padding-bottom: 15px;
-			padding-left: 16px;
-			background: #fff;
-			background-color: rgb(255, 255, 255);
-			border: 1px solid #DFDFDF;
-			border-top-color: rgb(223, 223, 223);
-			border-top-style: solid;
-			border-top-width: 1px;
-			border-right-color: rgb(223, 223, 223);
-			border-right-style: solid;
-			border-right-width: 1px;
-			border-bottom-color: rgb(223, 223, 223);
-			border-bottom-style: solid;
-			border-bottom-width: 1px;
-			border-left-color: rgb(223, 223, 223);
-			border-left-style: solid;
-			border-left-width: 1px;
-			border-radius: 5px;
-		}
-		
-		#page-border {
-		font-family: 'Open Sans', sans serif;
-		text-align: center;
-		}
-		
-		.text-align {
-		text-align: center;
-		}
-		
-		p {
-			font-family: 'Lora', PT Sans;
-			font-size: 14pt;
-		}
-		#page-header p{
-			font-family: 'Open Sans', sans serif;
-			text-align: center;
-			font-size: 30pt;
-			color: #044198;
-			margin-bottom: 40px;
-			margin-left: 40px;
-			margin-top: 30px;
-		}
-		
-		p.pagep1 {
-			text-align: justify;
-			font-size: 14pt;
-			line-height: 1.2;
-			margin-bottom: 15px;
-			margin-top: 0px;
-			text-indent: 25px;
-		}
-		
-		ul.aboutul {
-			font-family: 'Open Sans', 'Times New Roman', sans serif;
-			color: #2e2e2e;
-			text-align: left;
+
+
+		.flex-container{
+			display: flex;
+			flex-direction: column;
+			justify-content: right;
+  			align-items: center;
+  			margin: 0 2rem 0 2rem;
+			margin-top: 1.5rem;
 			font-size: 15pt;
-			padding-left: 30%;	
-			line-height: 1.4;	
 		}
 		
-		p.pagep2 {
-			text-align: justify;
-			font-size: 14pt;
-			line-height: 1.1;
-			margin-top: 7px;
-			margin-bottom: 15px;
-			text-indent: 25px;
-		}
-		p.pagep3 {
-			text-align: justify;
-			font-size: 14pt;
-			line-height: 1.1;
-			margin-top: 11px;
-			margin-bottom: 15px;
-			text-indent: 25px;
-		}		
-		
-		p.pagep4 {
-			text-align: justify;
-			font-size: 14pt;
-			line-height: 1.1;
-			text-indent: 25px;
-			margin-top: 11px;
-			margin-bottom: 15px;
-		}
-		
-		p.pagep5 {
-			text-align: justify;
-			font-size: 14pt;
-			line-height: 1.1;
-			margin-top: 11px;
-			margin-bottom: 15px;
-			text-indent: 25px;
-		}
-		
-		p.pagep6 {
-			text-align: justify;
-			font-size: 14pt;
-			line-height: 1.1;
-			margin-bottom: 11px;
-			text-indent: 25px;
-		}
-		
-		p.pagep7 {
-			text-align: justify;
-			font-size: 14pt;
-			line-height: 1.1;
-			text-indent: 25px;
-		}		
-	
-		p.pagep8 {
-			text-align: justify;
-			font-size: 14pt;
-			line-height: 1.1;
-			text-indent: 25px;
-			margin-bottom: 13px;
+		.flex-block {
+			margin-bottom:  1rem;
+
 		}
 
-		p.pagep9 {
-			text-align: justify;
-			font-size: 14pt;
-			line-height: 1.1;
-			text-indent: 25px;
-		}		
-		
-		main ul li p{
-			font-family: 'Open Sans', sans serif;
-			text-align: left;
-			line-height: 1.2;
-			font-size: 20pt;
-			margin-bottom: 40px;
-			color: #2e2e2e;
+		.list-beginning{
+			margin-top: 2rem;
 		}
-		
-		#pageul {			
-			list-style: none;
-			padding: 0;
-			margin: 0;
-			overflow: hidden;
+
+		.list-end{
+			margin-bottom: 3rem;
 		}
-		
-		.pageul li {
-			padding-left: 265px;
-			position: relative;
-			min-height: 35px;
-			vertical-align: middle;
-			list-style: none; 
-		}
-		
-		.pageul li:before {
-			content: '';
-			width: 31px;
-			height: 45px;
-			position: absolute;
-			background: url('https://media.githubusercontent.com/media/pioc-si/Blokadnyi_Leningrad/main/images/geo.png') no-repeat center;
-			background-size: cover;
-			background-position: center;
-			margin-left: 190px;
-			left: 0;
-			top: 50%;
-			transform: translateY(-50%);
-		}
-								 
-		footer ul p a:link {
+									 
+		footer a:link {
 			text-decoration: none;
-			color: black;	
+			color: white;
 			font-style: italic;	
 			margin-right: 25px;	
 			margin-bottom: 0em;
-			color: white;
 		} 
-		
-		footer p {
-		color: white;
-		}
 				
 		#map, #about, #thanks {
 		  width: 100%;
-		  height: 750px;
+		  height: 100vh;
 		}
 		
 		#about, #thanks {
 		  display: none;
 		}
+
+
 					
   </style>
 </head>
@@ -286,50 +131,38 @@
 		    <div id="map"></div>
 			<!-- О ПРОЕКТЕ -->
 			<div id="about">
-			  <div id='main-text'>
-				<div id='page-border'>
-				<p class='pagep1'> p1 </p>
-				<ul class='aboutul'>
-					<li>Автор проекта - Давыдова Виктория Станиславовна</li>
-					<li>Куратор проекта - Алмазова Любовь Александровна</li>
-					<li>Техник-программист - Крючкова Анастасия Владимировна </li>
-				</ul>
-				<p class='pagep2'>Цель виртуальной выставки – раскрыть историю блокадного Ленинграда посредством архивных фотодокументов с добавлением отрывков из книги <b>А. Адамовича и Д. Гранина «Блокадная книга»</b>.</p> 
-				<p class='pagep3'>Целевая аудитория выставки – краеведы, изучающие Ленинград в период блокады во время Великой Отечественной войны 1941-1945 годов и жители города. </p>
-				<p class='pagep4'>Представленные архивные материалы охватывают период с 1941 по 1944 годы. </p>
-				<p class='pagep5'>В выставке использованы материалы <b>Санкт-Петербургского государственного казённого учреждения «Центральный государственный архив кинофотофонодокументов Санкт-Петербурга»</b> и сообщества <b>«Старый Петербург»</b> в социальной сети «ВКонтакте».</p>
-				<p class='pagep6'>Экспонатами, размещёнными на выставке, являются фотодокументы и отрывки из книги А. Адамовича и Д. Гранина «Блокадная книга» – это позволяет дополнить восприятие выставки через воспоминания участников событий. </p>
-				<p class='pagep7'>Фотодокументы и отрывки из «Блокадной книги» А.Адамовича и Д.Гранина помещены на <b>карту Ленинграда издания немецкого Генерального Штаба 1941 года, составленную на основе Плана Ленинграда издательства Ленсовета 1936 года.</b> </p>
-				<p class='pagep8'>Фотодокументы снабжены <b>архивным шифром</b>, к отрывкам из «Блокадной книги» А.Адамовича и Д.Гранина приведено аналитическое библиографическое описание. </p>
-				<p class='pagep9'><b><font color='#FFD700'>Жёлтые</font></b> кнопки на карте обозначают наличие фотодокумента и отрывка из «Блокадной книги» А.Адамовича и Д.Гранина, <b><font color='#7CFC00'>зелёные</font></b> кнопки обозначают наличие только отрывка из «Блокадной книги» А.Адамовича и Д.Гранина, что позволит сориентировать посетителей выставки по адресам города. 	</p>	
-				</div>
+			  <div class='flex-container'>
+				<div class='flex-block'><b>Виртуальная выставка «Блокадный Ленинград»</b> является результатом Выпускной квалификационной работы выпускницы <i>СПбГБПОУ <a href='http://www.spbbt.ru/'>«Санкт-Петербургский техникум библиотечных и информационных технологий»</a></i>. Разработана в рамках сотрудничества с <i>СПбГБУ <a href='https://nevcbs.spb.ru/'>«Невская централизованная библиотечная система»</a></i> и приурочена к 100-летию со дня рождения писателя Даниила Гранина и к 75-й годовщине полного освобождения Ленинграда от фашисткой блокады, отмечаемые в 2019 году. Данная выставка является историко-информативной. </div>
+				<div class='flex-block list-beginning'>Автор проекта - Давыдова Виктория Станиславовна</div>
+				<div class='flex-block'>Автор идеи - Семёнова Валентина Викторовна</div>
+				<div class='flex-block'>Куратор проекта - Алмазова Любовь Александровна</div>
+				<div class='flex-block list-end'>Техник-программист - Крючкова Анастасия Владимировна </div>
+				<div class='flex-block'>Цель виртуальной выставки – раскрыть историю блокадного Ленинграда посредством архивных фотодокументов с добавлением отрывков из книги <b>А. Адамовича и Д. Гранина «Блокадная книга»</b>.</div> 
+				<div class='flex-block'>Целевая аудитория выставки – краеведы, изучающие Ленинград в период блокады во время Великой Отечественной войны 1941-1945 годов и жители города. </div>
+				<div class='flex-block'>Представленные архивные материалы охватывают период с 1941 по 1944 годы. </div>
+				<div class='flex-block'>В выставке использованы материалы <b>Санкт-Петербургского государственного казённого учреждения <a href='https://spbarchives.ru/cgakffd'> «Центральный государственный архив кинофотофонодокументов Санкт-Петербурга»</a></b> и сообщества <b><a href='https://vk.com/club35689037'>«Старый Петербург»</a></b> в социальной сети «ВКонтакте».</div>
+				<div class='flex-block'>Экспонатами, размещёнными на выставке, являются фотодокументы и отрывки из книги А. Адамовича и Д. Гранина «Блокадная книга» – это позволяет дополнить восприятие выставки через воспоминания участников событий. </div>
+				<div class='flex-block'>Фотодокументы и отрывки из «Блокадной книги» А. Адамовича и Д. Гранина помещены на <b>карту Ленинграда издания немецкого Генерального Штаба 1941 года, составленную на основе Плана Ленинграда издательства Ленсовета 1936 года.</b> </div>
+				<div class='flex-block'>Фотодокументы снабжены <b>архивным шифром</b>, к отрывкам из «Блокадной книги» А. Адамовича и Д. Гранина приведено аналитическое библиографическое описание. </div>
+				<div class='flex-block'><b><font color='#FFD700'>Жёлтые</font></b> кнопки на карте обозначают наличие фотодокумента и отрывка из книги, <b><font color='#7CFC00'>зелёные</font></b> кнопки обозначают наличие только отрывка, что позволит сориентировать посетителей выставки по адресам города. </div>	
 			  </div>
 			</div>
 			<!-- Благодарности -->
 			<div  id="thanks" >
-			  <div id='main-text'>
-				<div id='page-border'>
-					<div id='page-header'>
-						<p><b>Благодарность за сотрудничество: </b></p>
-					</div>
-						<ul class='pageul'>	
-							<li><p> <a href='https://spbarchives.ru/cgakffd'> Центральному государственному архиву кинофотофонодокументов Санкт-Петербурга</a></p></li>
-							<li><p>Администратору сообщества <a href='https://vk.com/club35689037'>«Старый Петербург»</a>  за помощь в предоставлении фотодокументов </p></li>
-							<li><p>Сайту <a href='http://www.retromap.ru/'>Retromap</a> за предоставление <a href='http://www.retromap.ru/m/#1419411_z13_59.929775,30.356941'>карты</a></p></li>
-							<li><p>Технику-программисту Крючковой Анастасии </p></li>
-						</ul>
+			  	<div class='flex-container'>
+						<div class='flex-block'><b>Благодарность за сотрудничество: </b></div>
+							<div class='flex-block'><a href='https://spbarchives.ru/cgakffd'> Центральному государственному архиву кинофотофонодокументов Санкт-Петербурга</a></div>
+							<div class='flex-block'>Администратору сообщества <a href='https://vk.com/club35689037'>«Старый Петербург»</a>  за помощь в предоставлении фотодокументов </div>
+							<div class='flex-block'>Сайту <a href='http://www.retromap.ru/'>Retromap</a> за предоставление <a href='http://www.retromap.ru/m/#1419411_z13_59.929775,30.356941'>карты</a></div>
+							<div class='flex-block'>Технику-программисту Крючковой Анастасии Владимировне </div>
 				</div>
-			  </div>
 			</div>
 		
         </main>
 		<footer>
-		    <ul>
-			    
-			<p align='right'>E-mail: <a href="mailto:victoriia.davydova@yandex.ru" >victoriia.davydova@yandex.ru</a></p>
+			<div style='float: right'>E-mail: <a href="mailto:victoriia.davydova@yandex.ru" >victoriia.davydova@yandex.ru</a></div>
 		
-			</ul>
-			<p align='center'>© Давыдова В.С., 2022</p>
+			© Давыдова В.С., 2022
 		</footer>
     <script type="text/javascript">
 	
